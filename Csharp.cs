@@ -31,8 +31,8 @@ namespace Interfacing_With_SQLite3
                 connection.Open();
                 // Opens the SQLite connection
 
-                command.Connection = new SQLiteConnection(@"Data Source = ***");
-                // Sets the location of the database
+                command.Connection = connection;
+                // Sets the location of the database to the value of 'connection'
 
                 command.CommandText = SQLquery;
                 // Sets the SQL query
