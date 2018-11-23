@@ -26,7 +26,7 @@ Class VB
                 connection.Open()
                         ' Opens the SQLite connection
                         
-                command.Connection = New SQLiteConnection("Data Source = ***")
+                command.Connection = connection
                         ' Sets the location of the database
                         
                 command.CommandText = SQLquery
