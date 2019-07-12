@@ -15,3 +15,4 @@ def sqlInput(query, location):
     cursor.execute(query)
     conn.commit()
     conn.close()
+    
